@@ -34,6 +34,7 @@ app.get('/elements', (req, res) => {
     });
 });
 
+// Si no se encuentra la ruta, redirigir a la pagina 404
 app.get('*', (req, res) => {
     res.sendFile(__dirname + '/public/404.html');
 });
