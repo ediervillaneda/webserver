@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
     });
 });
 
+//Servir contenido dinamico.
 app.get('/generic', (req, res) => {
     res.render('generic', {
         title: 'Generic',
